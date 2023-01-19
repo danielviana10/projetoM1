@@ -1,0 +1,350 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Cabin', sans-serif;
+}
+/* estilização geral */
+.corpoPagina{
+    background-color: black;
+    color: white;
+}
+
+
+/* estilização do cabeçario */
+.cabecario{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 15px red, -1em 0 0.4em olive;
+}
+
+.listaMenu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-right: 70px;
+}
+.imgDiv{
+    display: flex;
+    align-items: center;
+    padding-block: 10px;
+}
+.imgLogo{
+    margin-left: 50px;
+    width: 80px;
+    border-radius: 50%;
+}
+.textLogo{
+    margin-left: 20px;
+    width: 250px;
+}
+.itensMenu{
+    margin-right: 30px;
+    font-size: 3vh;
+    cursor: pointer;
+    padding-block: 5px;
+    padding-inline: 5px;
+    border: 8px solid;
+    border-image: repeating-linear-gradient(135deg,black 0 10px,red 0 20px,black 0 30px) 8;
+    -webkit-mask: 
+    conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,white 0)
+    var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+    conic-gradient(at bottom 8px left  8px,  #0000 90deg,white 0)
+    0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+    linear-gradient(#000 0 0) padding-box no-repeat;
+    transition: .3s, -webkit-mask-position .3s .3s;
+}
+.carros{
+    font-size: 25px;
+}
+.descricao{
+    font-size: 17px;
+}
+.hover:hover {
+    --_i: 100%;
+    color: red;
+    transition: .3s, -webkit-mask-size .3s .3s;
+}
+.itensMenu:hover{
+    --_i: 100%;
+    color: red;
+    transition: .3s, -webkit-mask-size .3s .3s;
+}
+
+
+
+/* container principal */
+.containerPrincipal{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.listaDeCards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    margin-top: 30px;
+}
+
+/* cards */
+.cards{
+    border: 8px solid;
+    border-image: repeating-linear-gradient(135deg,black 0 10px,red 0 20px,black 0 30px) 8;
+    -webkit-mask: 
+    conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,white 0)
+    var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+    conic-gradient(at bottom 8px left  8px,  #0000 90deg,white 0)
+    0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+    linear-gradient(#000 0 0) padding-box no-repeat;
+    transition: .3s, -webkit-mask-position .3s .3s;
+    width: 300px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+.cards:hover{
+    background-color: white;
+    --_i: 100%;
+    color: black;
+    transition: .3s, -webkit-mask-size .3s .3s;
+}
+
+.imagensHatch{
+    width: 300px;
+    height: auto;
+    background-color: rgba(255, 0, 0, 0.03);
+    border-radius: 10px;
+}
+.botaoAdicionar{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border-color: red;
+    padding-inline: 10px;
+    display: flex;
+    margin-left: 155px;
+    border-radius: 10px;
+}
+.botaoAdicionar:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+
+
+/* pesquisa */
+.pesquisa{
+    display: flex;
+    margin-top: 30px;
+}
+.barraPesquisa{
+    padding-inline: 30px;
+    padding-block: 8px;
+    border-radius: 3px;
+}
+button{
+    padding-inline: 50px;
+    border-radius: 3px;
+    background-color: rgba(255, 0, 0, 0.808);
+    color: white;
+    cursor: pointer;
+    font-family: 'Cabin', sans-serif;
+}
+.botaoPesquisar:hover{
+    background-color: white;
+    color: #000;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.caixa{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+}
+.tituloCaixa{
+    text-align: center;
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 40px;
+    padding-top: 15px;
+}
+
+.caixaDoCarrinho{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 80%;
+    box-shadow: 0px 2px 5px red;
+    overflow: auto;
+}
+
+/* itens no carrinho */
+.listaDoCarrinho{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.imagemNoCarrinho{
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+.divCaixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 120px;
+}
+.h2Caixa{
+    font-size: 25px;
+}
+
+.divCaixaEsconde{
+    display: none;
+}
+
+/* ultimos itens da caixa */
+.fimDaLista{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 5px;
+    box-shadow: 0px 2px 5px red;
+    border-radius: 5px;
+}
+.listaQuantidade{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px;
+}
+
+.listaValorFinal{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 10px;
+}
+
+.removedorButton:hover{
+    background-color: white;
+    color: black;
+    transition: .3s, -webkit-mask-size .3s .3s;
+    border: 2px solid red;
+}
+
+.luz{
+    border-radius: 30px;
+    padding-inline: 10px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+.escuro{
+    border-radius: 30px;
+    padding-inline: 10px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+}
+
+/* efeito luz */
+.corpoPaginaClaro{
+    background-color: white;
+    color: black;
+}
+ul.cardsClaro > li{
+    background-color: white;
+    color: black;
+}
+.buttonClaro{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+.buttonClaro:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.tituloCaixaClaro{
+    box-shadow: 0px 2px 5px black;
+}
+.caixaDoCarrinhoClaro{
+    box-shadow: 0px 2px 5px black;
+}
+.fimDaListaClaro{
+    box-shadow: 0px 2px 5px black;
+}
+.botaoPesquisarClaro{
+    background-color: rgb(0, 0, 0);
+}
+
+/* efeito escuro */
+.corpoPaginaEscuro{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+ul.cardsEscuro > li{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.buttonEscuro{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 0, 0);
+}
+.buttonEscuro:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.tituloCaixaEscuro{
+    border: none;
+}
+.caixaDoCarrinhoEscuro{
+    box-shadow: 0px 2px 5px red;
+}
+.fimDaListaEscuro{
+    box-shadow: 0px 2px 5px red;
+}
+.botaoPesquisarEscuro{
+    background-color: rgb(255, 0, 0);
+}

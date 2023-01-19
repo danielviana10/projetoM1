@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/database.js" defer></script>
+    <script src="./js/index.js" defer></script>
+    <title>Entrega Final</title>
+</head>
+<body class="corpoPagina">
+    <header class="cabecario">
+        <div class="imgDiv">
+            <img src="./img/Design sem nome (1).gif" alt="logo" class="imgLogo">
+            <img src="./img/PACK OF LION (1).png" alt="texto logo" class="textLogo">
+        </div>
+        <ul class="listaMenu">
+            <li class="itensMenu"><span class="todos">Todos</span></li>
+            <li class="itensMenu"><span class="hatch">Hatch</span></li>
+            <li class="itensMenu"><span class="sedan">Sedan</span></li>
+            <li class="itensMenu"><span class="suv">SUV</span></li>
+            <button class="luz">Light</button>
+        </ul>
+    </header>
+
+    <main class="containerPrincipal">
+        <section class="primeiraSecao">
+            <ul class="listaDeCards">
+            </ul>
+        </section>
+
+        <aside class="lado">
+            <ul class="pesquisa">
+                <input type="text" placeholder="Pesquise um modelo" class="barraPesquisa">
+                <button type='button' class="botaoPesquisar">Pequisar</button>
+            </ul>
+
+            <div class="caixa">
+                <span class="tituloCaixa">
+                    Carrinho de compras
+                </span>
+
+                <ul class="caixaDoCarrinho">
+                    <div class="divCaixa">
+                    <span class="h2Caixa">Carrinho vázio</span>
+                    <span class="spanCaixa">Adicione itens</span>
+                    </div>
+                </ul>
+                
+                <ul class="fimDaLista">
+                    <ul class="listaQuantidade">
+                        <li>Quantidade: <li class="quantidade"></li>
+                        </li>
+                    </ul>
+                    <ul class="listaValorFinal">
+                        <li>Total<li class="valorFinal"></li>
+                        </li>
+                    </ul>
+                </ul>
+
+            </div>
+        </aside>
+    </main>
+</body>
+</html>
