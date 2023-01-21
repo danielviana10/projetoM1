@@ -75,10 +75,7 @@ function createListCars(list){
 // selecionar qual lista vai aparecer
 let seletorTodos = document.querySelector('.todos');
 seletorTodos.addEventListener('click', function(e){
-    listaCards.innerHTML = "";
-    createListCars(listaHatch)
-    createListCars(listaSedan)
-    createListCars(listaSuv)
+    location.reload();
 })
 let seletorHatch = document.querySelector('.hatch');
 seletorHatch.addEventListener('click', function(e){
